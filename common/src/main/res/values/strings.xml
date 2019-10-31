@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">libcore</string>
-
+    <string name="count_content">还剩%1$s秒</string>
     <string name="LoadingController_loading_message">加载中</string>
     <string name="LoadingController_network_error_message">加载失败，请检查网络连接~</string>
     <string name="LoadingController_error_message">加载失败，点击重试~</string>
