@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveView">
+        <attr name="waveWaterLevel" format="float" />
+        <attr name="amplitudeRatio" format="float" />
+        <attr name="waveLengthRatio" format="float" />
+        <attr name="waveShiftRatio" format="float" />
+        <attr name="frontWaveColor" format="color" />
+        <attr name="behindWaveColor" format="color" />
+        <attr name="waveShape" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+        <attr name="showWave" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SpringLayout">
+        <attr name="spring_tv_label" format="string" />
+        <attr name="spring_inner_text" format="string" />
+        <attr name="spring_inner_src" format="reference" />
+    </declare-styleable>
+
+    <!--交易所view image 3个textview-->
+    <declare-styleable name="ExchangeView">
+        <attr name="tv_one_text" format="string" />
+        <attr name="tv_two_text" format="string" />
+        <attr name="tv_three_text" format="string" />
+        <attr name="image_src" format="reference" />
+    </declare-styleable>
+
+    <!--上下两个textView-->
+    <declare-styleable name="VerticalTwoTextView">
+        <attr name="tv_top_text" format="string" />
+        <attr name="tv_bottom_text" format="string" />
+        <attr name="tv_top_text_color" format="reference" />
+        <attr name="tv_bottom_text_color" format="reference" />
+        <attr name="tv_top_text_size" format="dimension"/>
+        <attr name="tv_bottom_text_size" format="dimension"/>
+    </declare-styleable>
+
+
+    <!--左右两个textView-->
+    <declare-styleable name="HorizontalTwoTextView">
+        <attr name="tv_left_text" format="string" />
+        <attr name="tv_right_text" format="string" />
+        <attr name="tv_left_text_color" format="reference" />
+        <attr name="tv_right_text_color" format="reference" />
+        <attr name="tv_left_text_size" format="dimension"/>
+        <attr name="tv_right_text_size" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="WaveProgress">
+        <!-- 是否开启抗锯齿 -->
+        <attr name="antiAlias" />
+        <!-- 深色水波动画时间 -->
+        <attr name="darkWaveAnimTime" format="integer" />
+        <!-- 浅色水波动画时间 -->
+        <attr name="lightWaveAnimTime" format="integer" />
+        <!-- 最大值 -->
+        <attr name="maxValue" />
+        <!-- 当前值 -->
+        <attr name="value" />
+        <attr name="valueColor" />
+        <attr name="valueSize" />
+        <!-- 绘制内容相应的提示语 -->
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <!-- 圆环宽度 -->
+        <attr name="circleWidth" format="dimension" />
+        <!-- 圆环颜色 -->
+        <attr name="circleColor" format="color|reference" />
+        <!-- 背景圆环颜色 -->
+        <attr name="bgCircleColor" format="color|reference" />
+        <!-- 锁定水波不随圆环进度改变，默认锁定在50%处 -->
+        <attr name="lockWave" format="boolean" />
+        <!-- 水波数量 -->
+        <attr name="waveNum" format="integer" />
+        <!-- 水波高度，峰值和谷值之和 -->
+        <attr name="waveHeight" format="dimension" />
+        <!-- 深色水波颜色 -->
+        <attr name="darkWaveColor" format="color|reference" />
+        <!-- 是否显示浅色水波 -->
+        <attr name="showLightWave" format="boolean" />
+        <!-- 浅色水波颜色 -->
+        <attr name="lightWaveColor" format="color|reference" />
+        <!-- 浅色水波的方向 -->
+        <attr name="lightWaveDirect" format="enum">
+            <enum name="L2R" value="0" />
+            <enum name="R2L" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--阴影-->
+    <declare-styleable name="ShadowContainer">
+        <attr name="containerShadowColor" format="color"/>
+        <attr name="containerShadowRadius" format="dimension"/>
+        <attr name="containerDeltaLength" format="dimension"/>
+        <attr name="containerCornerRadius" format="dimension"/>
+        <attr name="deltaX" format="dimension"/>
+        <attr name="deltaY" format="dimension"/>
+        <attr name="enable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyCountDownTextureView">
+        <attr name="easyCountRectWidth"
+              format="dimension"/>
+        <attr name="easyCountRectHeight"
+              format="dimension"/>
+        <attr name="easyCountRectRadius"
+              format="dimension"/>
+        <attr name="easyCountRectBorderSize"
+              format="dimension"/>
+        <attr name="easyCountRectBorderColor"
+              format="color"/>
+        <attr name="easyCountRectBorderStroke"
+              format="dimension"/>
+        <attr name="easyCountRectSpacing"
+              format="dimension"/>
+        <attr name="easyCountTimeColor"
+              format="color"/>
+        <attr name="easyCountTimeSize"
+              format="dimension"/>
+        <attr name="easyCountTimeStroke"
+              format="dimension"/>
+        <attr name="easyCountColonColor"
+              format="color"/>
+        <attr name="easyCountColonSize"
+              format="dimension"/>
+        <attr name="easyCountColonStroke"
+              format="dimension"/>
+        <attr name="easyCountBackgroundColor"
+              format="color"/>
+        <attr name="easyCountHour"
+              format="integer"/>
+        <attr name="easyCountMinute"
+              format="integer"/>
+        <attr name="easyCountSecond"
+              format="integer"/>
+    </declare-styleable>
+
+
+    <style name="translate_style" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/view_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/view_fade_out</item>
+    </style>
+
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!-- 底部弹出框 @android:style/Theme.Holo.Dialog          android:Animation -->
+    <style name="BottomDialogStyle" parent="@android:style/Theme.Holo.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在悬浮Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影 -->
+        <item name="android:windowIsTranslucent">true</item> <!--半透明-->
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/anim_slide_bottom_in_out</item>
+    </style>
+    <!--animation-->
+    <style name="anim_slide_bottom_in_out" parent="android:Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+</resources>

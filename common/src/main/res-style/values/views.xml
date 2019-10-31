@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--drawableTop textview 平分-->
+    <style name="tv_top_iv_average">
+        <item name="android:drawablePadding">@dimen/dp_4</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">@dimen/dp_4</item>
+        <item name="android:paddingTop">@dimen/dp_4</item>
+    </style>
+
+    <style name="tv_average">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="line_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_divider</item>
+    </style>
+
+    <style name="tv_shape_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/dp_4</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_2</item>
+        <item name="android:paddingTop">@dimen/dp_2</item>
+    </style>
+
+    <!--阴影控件样式-->
+    <style name="shadowStyle">
+        <item name="containerCornerRadius">@dimen/dp_8</item>
+        <item name="containerDeltaLength">@dimen/dp_4</item>
+        <item name="containerShadowColor">@color/shadow_color</item>
+        <item name="containerShadowRadius">@dimen/dp_8</item>
+    </style>
+
+</resources>

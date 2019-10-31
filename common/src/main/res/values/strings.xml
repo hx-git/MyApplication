@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">libcore</string>
+
+    <string name="LoadingController_loading_message">加载中</string>
+    <string name="LoadingController_network_error_message">加载失败，请检查网络连接~</string>
+    <string name="LoadingController_error_message">加载失败，点击重试~</string>
+    <string name="LoadingController_error_retry">重新加载</string>
+
+
+
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">下拉刷新</string>
+    <string name="listview_loading">加载中...</string>
+    <string name="nomore_loading">没有更多内容了.</string>
+    <string name="refreshing">加载中...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="loading_done">下载完成</string>
+    <string name="listview_header_last_time">最后刷新时间：</string>
+
+
+    <string name="behavior_main_header">com.cali.libcore.view.behavior.MainHeaderBehavior</string>
+    <string name="behavior_main_title">com.cali.libcore.view.behavior.MainTitleBehavior</string>
+    <string name="behavior_main_content">com.cali.libcore.view.behavior.MainContentBehavior</string>
+</resources>

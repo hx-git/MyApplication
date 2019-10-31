@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/invite_wx"
+            android:text="微信邀请"
+            android:gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:drawableTop="@mipmap/icon_book_mine_invite_wx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/share_moments"
+            android:text="朋友圈"
+            android:gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:drawableTop="@mipmap/icon_book_mine_invite_moments"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/invite_qq"
+            android:text="QQ邀请"
+            android:gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:drawableTop="@mipmap/icon_book_mine_invite_qq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/invite_qr"
+            android:text="二维码邀请"
+            android:gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:drawableTop="@mipmap/icon_book_mine_invite_qr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+       <TextView
+           android:id="@+id/tv_cancel"
+           android:layout_width="match_parent"
+           android:layout_height="56dp"
+           android:gravity="center"
+           android:padding="16dp"
+           android:text="取消分享"
+           android:background="@color/white"
+           android:textColor="@color/nb_read_font_2"
+           android:textSize="16sp" />
+</LinearLayout>

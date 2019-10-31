@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/contentText"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#333"
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_48"
+        android:layout_height="wrap_content"
+        tools:text="测试测试测试测试测试测试测试测试
+        测试测试测试测试测试测试测试测试测试测试"/>
+
+    <TextView
+        android:id="@+id/textPlus"
+        android:textSize="@dimen/sp_18"
+        android:textColor="#3577ff"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="bottom|end"
+        tools:text="折叠收起"/>
+
+</FrameLayout>

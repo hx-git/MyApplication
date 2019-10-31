@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--  app:srlFixedHeaderViewId="@+id/profile" -->
+    <!--  指定一个view在列表滑动时固定  -->
+    <com.cali.libcore.view.xrecyclerview.XRecyclerView
+        android:id="@+id/x_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.cali.libcore.view.xrecyclerview.XRecyclerView>
+
+    <!--<com.library.base.related.view.ReadAwardView-->
+        <!--android:id="@+id/award_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal|center"-->
+        <!--android:layout_marginTop="-100dp"-->
+        <!--android:alpha="0"-->
+        <!--android:scaleX="0.5"-->
+        <!--android:scaleY="0.5"-->
+        <!--android:visibility="visible">-->
+    <!--</com.library.base.related.view.ReadAwardView>-->
+
+</FrameLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--绑定手机号哦；-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/TextViewPublicLeft"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text="手机号"
+            android:textColor="#ff59595f"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="请输入要绑定的手机号码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="#ffc5c5c5"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@color/white_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewPublicLeft"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:text="验证码"
+            android:textColor="#ff59595f"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_phone_number_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:singleLine="true"
+            android:textColorHint="#ffc5c5c5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_8"
+            android:padding="5dp"
+            android:id="@+id/tv_send_proof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dp_80"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:background="@drawable/shape_aaaaaa_2_size"
+            android:textColor="#fbfbfb"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
