@@ -1,12 +1,9 @@
 package com.cali.libcore.http
 
-import com.cali.libcore.BuildConfig
+import com.cali.common.BuildConfig
 import com.cali.libcore.base.ContextHolder
 import com.cali.libcore.http.converter.MyConverterFactory
-import com.cali.libcore.http.dns.HttpDns
-import com.cali.libcore.http.interceptor.RetryInterceptor
 import com.google.gson.Gson
-import leavesc.hello.monitor.MonitorInterceptor
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -58,7 +55,7 @@ class RetrofitManagement private constructor() {
         //debug模式下添加拦截器
         if (BuildConfig.DEBUG) {
             builder.addInterceptor(httpLoggingInterceptor)
-            builder.addInterceptor(MonitorInterceptor(ContextHolder.application))
+//            builder.addInterceptor(MonitorInterceptor(ContextHolder.application))
         }
         //添加公共参数
 //        builder.addInterceptor(ParamsInterceptor(ContextHolder.application))

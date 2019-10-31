@@ -2,7 +2,7 @@ package com.cali.libcore.util.preference
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.cali.common.constant.EventSimple
+import com.cali.common.constant.EventStr
 import com.cali.common.kt.post
 import com.cali.libcore.base.ContextHolder
 import com.cali.libcore.base.SP_DEFAULT_NAME
@@ -32,6 +32,6 @@ class BeanPreference<T:Any>(private val bean:T):ReadWriteProperty<Any?,T>{
             .putString(property.name,GsonUtils.instance.toString(value))
             .apply()
         //保存完再发送event事件
-        EventSimple(property.name).post()
+        EventStr(property.name).post()
     }
 }

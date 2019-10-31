@@ -1,6 +1,6 @@
 package com.cali.libcore.http
 
-import com.cali.libcore.BuildConfig
+import com.cali.common.BuildConfig
 
 /**
  * 时间：2019/5/31 10:49

@@ -12,7 +12,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import com.cali.libcore.BuildConfig;
+
+import com.cali.common.BuildConfig;
 import com.cali.common.R;
 
 /**
